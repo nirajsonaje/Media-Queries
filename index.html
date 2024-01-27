@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+        }
+        
+        img{
+            width: 800px;
+            height: 533px ;
+            aspect-ratio: 800/533;
+        }
+        @media screen and (max-width:810px) {
+            body{
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            background-color: black;
+            }
+            
+            img{
+            width: 600px;
+            height: 400px;
+            /* aspect-ratio: 800/533; */
+            }
+        }    
+        @media screen and (max-width:610px) {
+            img{
+            width: 400px;
+            height: 267px;
+            /* aspect-ratio: 800/533; */
+        }
+        @media screen and (max-width:410px) {
+            img{
+            width: 200px;
+            height: 133.25px;
+            /* aspect-ratio: 800/533; */
+        }
+        }
+    </style>
+</head>
+<body>
+        <img src="image.webp" alt="this is image">  
+</body>
+</html>
